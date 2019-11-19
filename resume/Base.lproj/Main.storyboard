@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YUG-Ye-Obx">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -16,16 +16,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="center" axis="vertical" distribution="fillProportionally" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="Jvc-If-4Q0">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chantal Demissie" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9r3-ye-eEj">
-                                        <rect key="frame" x="80" y="0.0" width="254.5" height="72.5"/>
+                                        <rect key="frame" x="80" y="0.0" width="254.5" height="68.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05H-BB-q4P">
-                                        <rect key="frame" x="106.5" y="132.5" width="201" height="49.5"/>
+                                        <rect key="frame" x="106.5" y="128.5" width="201" height="47"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Software Developer">
                                                 <attributes>
@@ -37,15 +37,16 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-qx-a2X">
-                                        <rect key="frame" x="130.5" y="242" width="153" height="90.5"/>
+                                        <rect key="frame" x="130.5" y="235.5" width="153" height="85.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Experience"/>
                                         <connections>
                                             <action selector="Experience:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsU-Uu-RnP"/>
+                                            <segue destination="UnB-Ti-ymY" kind="showDetail" id="o7l-nZ-o3n"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYA-VQ-Ux9">
-                                        <rect key="frame" x="130.5" y="392.5" width="153" height="90.5"/>
+                                        <rect key="frame" x="130.5" y="381" width="153" height="85.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Languages"/>
                                         <connections>
@@ -53,7 +54,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-TC-GHV">
-                                        <rect key="frame" x="151" y="543" width="112" height="275"/>
+                                        <rect key="frame" x="151" y="526.5" width="112" height="247.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Projects"/>
                                         <connections>
@@ -72,8 +73,59 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="z6q-Q1-HAr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Experience View Controller-->
+        <scene sceneID="C5v-JE-Tfq">
+            <objects>
+                <viewController id="UnB-Ti-ymY" customClass="ExperienceViewController" customModule="resume" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Zzr-pU-yU8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experiences" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="55j-Jw-rDy">
+                                <rect key="frame" x="50" y="76" width="314" height="690"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="55j-Jw-rDy" firstAttribute="leading" secondItem="rZ3-0U-Ysg" secondAttribute="leading" constant="50" id="6Qg-Hx-ZkK"/>
+                            <constraint firstItem="55j-Jw-rDy" firstAttribute="centerX" secondItem="Zzr-pU-yU8" secondAttribute="centerX" id="HLt-2Y-jrG"/>
+                            <constraint firstItem="55j-Jw-rDy" firstAttribute="centerY" secondItem="Zzr-pU-yU8" secondAttribute="centerY" id="ZGA-xl-QyN"/>
+                            <constraint firstItem="55j-Jw-rDy" firstAttribute="top" secondItem="rZ3-0U-Ysg" secondAttribute="top" constant="76" id="xQg-c2-OJL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="rZ3-0U-Ysg"/>
+                    </view>
+                    <connections>
+                        <outlet property="experiencesLabel" destination="55j-Jw-rDy" id="TQ6-ix-Dtg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c9s-bD-OAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1810.144927536232" y="138.61607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AEN-0B-P8e">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XHO-at-eFc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YUG-Ye-Obx" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="etq-VV-wtU">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="s0u-O9-PLU"/>
+                    </connections>
+                </navigationController>
             </objects>
             <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
         </scene>
