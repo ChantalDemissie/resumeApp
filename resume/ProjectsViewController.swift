@@ -1,18 +1,33 @@
 import UIKit
 
-class ProjectsViewController: UIViewController {
-    
-    @IBOutlet weak var ProjectLabel: UILabel!
+class ProjectsViewController: UIViewController, UITableViewDataSource {
     
     var projects = [
         "Dreamlife",
         "Rideshare",
-        "Github"]
+        "Github"
+    ]
+    
+    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ProjectLabel.text = "\u{2022} " + projects.joined(separator: "\n\u{2022} ")
+        
+        tableView.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return projects.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell()
+        
+        cell.textLabel?.text = "\(projects[indexPath.row])"
+        
+        return cell
     }
     
 }

@@ -1,18 +1,30 @@
 import UIKit
 
-class ExperienceViewController: UIViewController {
+class ExperienceViewController: UIViewController, UITableViewDataSource {
     
-    @IBOutlet weak var experiencesLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     var experiences = [
-        "Nordstrom iOS Mobile Team",
-        "Ada Developers Academy"
+        "Nordstrom iOS Mobile Team: Intern",
+        "Ada Developers Academy: Student"
     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        experiencesLabel.text = "\u{2022} " + experiences.joined(separator: "\n\u{2022} ")
+        tableView.dataSource = self
     }
     
-}
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+             return experiences.count
+        }
+
+        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+            let cell = UITableViewCell()
+
+            cell.textLabel?.text = "\(experiences[indexPath.row])"
+
+            return cell
+        }
+    }
