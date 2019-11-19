@@ -42,7 +42,9 @@
                                         <state key="normal" title="Experience"/>
                                         <connections>
                                             <action selector="Experience:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bsU-Uu-RnP"/>
-                                            <segue destination="UnB-Ti-ymY" kind="showDetail" id="o7l-nZ-o3n"/>
+                                            <segue destination="UnB-Ti-ymY" kind="popoverPresentation" popoverAnchorView="AMa-qx-a2X" id="o7l-nZ-o3n">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYA-VQ-Ux9">
@@ -51,6 +53,9 @@
                                         <state key="normal" title="Languages"/>
                                         <connections>
                                             <action selector="Languages:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hca-8r-7sh"/>
+                                            <segue destination="ulN-t2-B2B" kind="popoverPresentation" popoverAnchorView="EYA-VQ-Ux9" id="fOv-pk-UK0">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-TC-GHV">
@@ -59,6 +64,7 @@
                                         <state key="normal" title="Projects"/>
                                         <connections>
                                             <action selector="Projects:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aAf-dL-U0B"/>
+                                            <segue destination="BSX-uy-ETe" kind="presentation" id="Phv-59-6cR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -78,6 +84,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="138.61607142857142"/>
+        </scene>
+        <!--Languages View Controller-->
+        <scene sceneID="63U-zb-GKP">
+            <objects>
+                <viewController id="ulN-t2-B2B" customClass="LanguagesViewController" customModule="resume" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IeW-Fk-aJL">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Languages" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sue-mQ-2Um">
+                                <rect key="frame" x="20" y="7" width="367" height="809"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="f6J-dD-d69"/>
+                    </view>
+                    <connections>
+                        <outlet property="LanguagesLabel" destination="Sue-mQ-2Um" id="yJG-yL-WBo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7q-Yq-SW1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="138.61607142857142"/>
         </scene>
         <!--Experience View Controller-->
         <scene sceneID="C5v-JE-Tfq">
@@ -109,7 +142,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c9s-bD-OAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810.144927536232" y="138.61607142857142"/>
+            <point key="canvasLocation" x="1809" y="-602"/>
+        </scene>
+        <!--Projects View Controller-->
+        <scene sceneID="gf4-av-V1D">
+            <objects>
+                <viewController id="BSX-uy-ETe" customClass="ProjectsViewController" customModule="resume" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GR2-S0-eUF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Projects" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxd-iD-frE">
+                                <rect key="frame" x="20" y="29" width="374" height="779"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="2A1-fg-Rng"/>
+                    </view>
+                    <connections>
+                        <outlet property="ProjectLabel" destination="cxd-iD-frE" id="aTK-Vp-U7m"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9rh-CV-6QZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1808.6956521739132" y="863.83928571428567"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AEN-0B-P8e">
