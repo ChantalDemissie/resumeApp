@@ -3,15 +3,19 @@ import UIKit
 class ProjectsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     var projects = [
-        "Dreamlife",
-        "Rideshare",
-        "Github"
+        "Github: All Projects",
+        "Dreamlife: Capstone",
+        "Rideshare: Pair Project",
+        "Hacksy: Group Project" ,
+        
     ]
     
     var links = [
+        
+        "https://github.com/ChantalDemissie",
         "https://dream-life-100.firebaseapp.com/",
         "http://candr-rideshare.herokuapp.com/",
-        "https://github.com/ChantalDemissie",
+        "https://hacksy.herokuapp.com/",
     ]
     
     @IBOutlet weak var tableView: UITableView!

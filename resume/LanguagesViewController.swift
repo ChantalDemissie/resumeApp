@@ -9,7 +9,9 @@ class LanguagesViewController: UIViewController, UITableViewDataSource {
         "Ruby",
         "Ruby on Rails",
         "React",
-        "Javascript"
+        "Javascript",
+        "HTML",
+        "CSS",
     ]
     
     override func viewDidLoad() {

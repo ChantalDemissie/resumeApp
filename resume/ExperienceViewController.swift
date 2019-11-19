@@ -6,7 +6,9 @@ class ExperienceViewController: UIViewController, UITableViewDataSource {
     
     var experiences = [
         "Nordstrom iOS Mobile Team: Intern",
-        "Ada Developers Academy: Student"
+        "Ada Developers Academy: Student",
+        "Black Girls Code: Technical Assistant",
+        "Ada Prospective Student Mentor"
     ]
     
     override func viewDidLoad() {
