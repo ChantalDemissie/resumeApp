@@ -19,13 +19,13 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chantal Demissie" textAlignment="natural" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9r3-ye-eEj">
-                                        <rect key="frame" x="80" y="0.0" width="254.5" height="57.5"/>
+                                        <rect key="frame" x="80" y="0.0" width="254.5" height="50.5"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="05H-BB-q4P">
-                                        <rect key="frame" x="106.5" y="117.5" width="201" height="39.5"/>
+                                        <rect key="frame" x="106.5" y="110.5" width="201" height="35"/>
                                         <attributedString key="attributedText">
                                             <fragment content="Software Developer">
                                                 <attributes>
@@ -37,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMa-qx-a2X">
-                                        <rect key="frame" x="130.5" y="217" width="153" height="71.5"/>
+                                        <rect key="frame" x="130.5" y="205.5" width="153" height="63"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Experience"/>
                                         <connections>
@@ -48,7 +48,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EYA-VQ-Ux9">
-                                        <rect key="frame" x="130.5" y="348.5" width="153" height="71.5"/>
+                                        <rect key="frame" x="130.5" y="328.5" width="153" height="63"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Languages"/>
                                         <connections>
@@ -59,7 +59,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hH-TC-GHV">
-                                        <rect key="frame" x="151" y="480" width="112" height="71.5"/>
+                                        <rect key="frame" x="151" y="451.5" width="112" height="63"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                         <state key="normal" title="Projects"/>
                                         <connections>
@@ -67,11 +67,18 @@
                                             <segue destination="BSX-uy-ETe" kind="presentation" id="Phv-59-6cR"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-Qq-kUx">
-                                        <rect key="frame" x="192" y="611.5" width="30" height="162.5"/>
-                                        <state key="normal" title="Call"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBi-Qq-kUx">
+                                        <rect key="frame" x="182" y="574.5" width="50.5" height="27"/>
+                                        <state key="normal" title="Call" image="phone.fill" catalog="system"/>
                                         <connections>
                                             <action selector="Call:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KbG-XR-sdq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZs-OT-7hW">
+                                        <rect key="frame" x="174" y="661.5" width="66.5" height="112.5"/>
+                                        <state key="normal" title="Email" image="envelope.fill" catalog="system"/>
+                                        <connections>
+                                            <action selector="Email:" destination="BYZ-38-t0r" eventType="touchUpInside" id="muJ-RU-ayJ"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -219,4 +226,8 @@
             <point key="canvasLocation" x="-310" y="66"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="envelope.fill" catalog="system" width="64" height="46"/>
+        <image name="phone.fill" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
