@@ -52,7 +52,7 @@ extension UIImage {
     func invertedColors() -> UIImage? {
         guard let ciImage = CIImage(image: self) ?? ciImage, let filter = CIFilter(name: "CIColorInvert") else { return nil }
         filter.setValue(ciImage, forKey: kCIInputImageKey)
-
+        
         guard let outputImage = filter.outputImage else { return nil }
         return UIImage(ciImage: outputImage)
     }

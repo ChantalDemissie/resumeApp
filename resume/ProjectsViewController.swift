@@ -7,7 +7,6 @@ class ProjectsViewController: UIViewController, UITableViewDataSource, UITableVi
         "Dreamlife: Capstone",
         "Rideshare: Pair Project",
         "Hacksy: Group Project" ,
-        
     ]
     
     var links = [

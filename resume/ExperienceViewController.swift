@@ -18,15 +18,15 @@ class ExperienceViewController: UIViewController, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-             return experiences.count
-        }
-
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
-            let cell = UITableViewCell()
-
-            cell.textLabel?.text = "\(experiences[indexPath.row])"
-
-            return cell
-        }
+        return experiences.count
     }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = UITableViewCell()
+        
+        cell.textLabel?.text = "\(experiences[indexPath.row])"
+        
+        return cell
+    }
+}
