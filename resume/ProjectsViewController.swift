@@ -11,7 +11,6 @@ class ProjectsViewController: UIViewController, UITableViewDataSource, UITableVi
     ]
     
     var links = [
-        
         "https://github.com/ChantalDemissie",
         "https://dream-life-100.firebaseapp.com/",
         "http://candr-rideshare.herokuapp.com/",
@@ -38,11 +37,8 @@ class ProjectsViewController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = UITableViewCell()
-        
-        cell.textLabel?.text = "\(projects[indexPath.row])"
-        
+        cell.textLabel?.text = "\(projects[indexPath.row]) 🔗"
         return cell
     }
 }
