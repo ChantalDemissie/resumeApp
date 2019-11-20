@@ -27,7 +27,7 @@ class ViewController: UIViewController, MFMailComposeViewControllerDelegate {
             let mail = MFMailComposeViewController()
             mail.mailComposeDelegate = self
             mail.setToRecipients(["chantaldemissie@yahoo.com"])
-            mail.setMessageBody("<p>Awesome resume app!</p>", isHTML: true)
+            mail.setMessageBody("<p>Great resume app! Are you available for job or volunteer opportunities?</p>", isHTML: true)
             
             present(mail, animated: true)
             print("email is working")

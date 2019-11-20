@@ -47,6 +47,7 @@ class LanguagesViewController: UIViewController, UITableViewDataSource {
 }
 
 extension UIImage {
+    /// source: https://www.avanderlee.com/swift/dark-mode-support-ios/
     /// Inverts the colors from the current image. Black turns white, white turns black etc.
     func invertedColors() -> UIImage? {
         guard let ciImage = CIImage(image: self) ?? ciImage, let filter = CIFilter(name: "CIColorInvert") else { return nil }

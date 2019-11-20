@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		974F7669238373510001D1DA /* resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		974F7669238373510001D1DA /* Resume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Resume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		974F766C238373510001D1DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		974F766E238373510001D1DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		974F7670238373510001D1DA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		974F766A238373510001D1DA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				974F7669238373510001D1DA /* resume.app */,
+				974F7669238373510001D1DA /* Resume.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +93,7 @@
 			);
 			name = resume;
 			productName = resume;
-			productReference = 974F7669238373510001D1DA /* resume.app */;
+			productReference = 974F7669238373510001D1DA /* Resume.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -304,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chantal.resume;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Resume;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,7 +322,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.chantal.resume;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Resume;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
